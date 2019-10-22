@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Bilal1.0</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="Gallery"><u><b>Gallery</b></u></string>
+
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_main3">Main3Activity</string>
+    <string name="title_activity_radio">RadioActivity</string>
+    <string name="title_activity_hyperspacejump">HyperspacejumpActivity</string>
+</resources>

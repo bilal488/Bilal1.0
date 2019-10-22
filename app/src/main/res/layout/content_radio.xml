@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/r1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.smarttechmardan.bilal10.RadioActivity"
+    tools:showIn="@layout/activity_radio">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <RadioGroup
+        android:id="@+id/setbackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="28dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonwhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Clear Background" />
+
+        <RadioButton
+            android:id="@+id/radioButtonRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Red Background" />
+
+        <RadioButton
+            android:id="@+id/radioButtonGreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Green Background" />
+
+        <RadioButton
+            android:id="@+id/radioButtonpic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="set image on  background" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewgender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/setbackground"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="35dp"
+        android:text="Gender"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+    <CheckBox
+        android:id="@+id/checkBoxmale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewgender"
+        android:layout_marginTop="29dp"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"
+        android:text="Male" />
+
+    <CheckBox
+        android:id="@+id/checkBoxfemale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp"
+        android:text="Female"
+        android:layout_alignBaseline="@+id/checkBoxmale"
+        android:layout_alignBottom="@+id/checkBoxmale"
+        android:layout_toRightOf="@+id/checkBoxmale"
+        android:layout_toEndOf="@+id/checkBoxmale" />
+
+    <Switch
+        android:id="@+id/switchmusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBoxmale"
+        android:layout_alignStart="@+id/checkBoxmale"
+        android:layout_below="@+id/checkBoxmale"
+        android:layout_marginTop="49dp"
+        android:text="Switch" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxfemale"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="38dp"
+        android:layout_toEndOf="@+id/setbackground"
+        android:layout_toRightOf="@+id/setbackground"
+        android:text="ToggleButton"
+        android:textOff="Light Off"
+        android:textOn="Light On" />
+</RelativeLayout>
